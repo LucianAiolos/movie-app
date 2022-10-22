@@ -39,13 +39,14 @@ function App() {
     }
 
     const handleKeyDown = (e) => {
-      console.log('entered')
-      if(e.key === 'enter') {
+      console.log(e.key)
+      if(e.key === 'Enter') {
+        console.log('in if')
         searchMovie(input)
       }
     }
 
-    const searchMovie = (input) => {
+    const searchMovie = () => {
       console.log('searched')
       fetch(`https://api.themoviedb.org/3/search/movie?api_key=1cb8a2207e718162b37eb36283a1e3b4&query=${input}`)
         .then(res => res.json())
@@ -61,7 +62,7 @@ function App() {
           className='search'
           onChange={(e) => onChange(e)}
           // value={input}
-          onKeyDown={(e)=> handleKeyDown(e)}
+          onKeyDown={handleKeyDown}
         />
         <BsSearch className='search-icon' onClick={() => searchMovie(input)}/>
         {/* <AiOutlineMenu/> */}

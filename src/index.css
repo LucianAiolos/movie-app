@@ -57,6 +57,7 @@ input {
 
 main {
   margin-top: 100px;
+  width: 100%;
 }
 
 .movies-cont {
@@ -68,6 +69,10 @@ main {
 
 .movie {
   margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
 }
 
 .movie p {
@@ -92,7 +97,7 @@ nav {
 
 img {
   height: 350px;
-  width: auto;
+  width: 255px;
   border-radius: 3px;
   box-shadow: 5px 5px 10px black;
 }
