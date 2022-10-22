@@ -29,10 +29,51 @@ code {
   /* justify-content: center; */
 }
 
-.header {
+header {
   position: fixed;
   top: 0;
+  /* margin-top: 20px; */
+  width: 120%;
+  height: 70px;
+  background-color: rgb(41, 67, 72);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgba(245, 245, 245, 0.207);
+  /* box-shadow: 10px 5px 15px black; */
+}
 
+input {
+  padding: 5px 10px;
+  border-radius: 50px;
+  width: 60%;
+
+}
+
+.search-icon {
+  margin-left: 1rem;
+  font-size: 20px;
+}
+
+main {
+  margin-top: 100px;
+}
+
+.movies-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.movie {
+  margin-bottom: 3rem;
+}
+
+.movie p {
+  font-size: 1.2rem;
+  margin-left: 5px;
+  text-shadow: 3px 3px 5px black;
 }
 
 nav {
@@ -44,4 +85,15 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  background-color: whitesmoke;
+  color:rgb(28, 46, 49);
+
 }
+
+img {
+  height: 350px;
+  width: auto;
+  border-radius: 3px;
+  box-shadow: 5px 5px 10px black;
+}
+
